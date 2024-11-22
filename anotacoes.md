@@ -6,4 +6,8 @@
 
 * Comando `npm install express` para instalar o pacote do Express
 
-* Comando `node server.js` para executar o arquivo server.js criado dentro do projeto
+* Comando `node server.js` para executar o arquivo server.js criado dentro do projeto, usando a flag `--watch` não é preciso ficar rodando esse comando toda hora
+
+* Escrever no `package.json` em 'scripts' no campo 'dev', o comando `node --watch --env-file=.env server.js` na qual ao rodar no terminal o comando `node dev`, seja criado um servidor que se atualiza a cada mudança e que use as variáveis definidas no .env. Para usar isso no terminal, basta rodar o comando `npm run dev`.
+
+* 
