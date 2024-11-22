@@ -2,7 +2,8 @@ import { MongoClient } from "mongodb";
 
 export default async function conectarAoBanco(stringConexao) {
     /*
-    export default: Usar a função em outro arquivo
+    export: Usar a função em outro arquivo
+    default: Quando o arquivo possui uma única função a ser exportada 
     async: função que retorna uma Promise, sem interromper o fluxo do programa
     */
 
