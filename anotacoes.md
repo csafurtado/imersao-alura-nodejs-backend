@@ -15,3 +15,5 @@
 * Comando `npm i @google/generative-ai` para instalar o pacote que comunica com o Gemini
 
 * Comando `npm i cors` para instalar o pacote que trará funcionalidades de segurança relativos ao CORS (comunicação de outros endereços)
+
+* Comando `npm i dotenv` para instalar o pacote que irá conseguir ler com maior segurança as variáveis de ambiente definidas no projeto para deploy na nuvem. Recomenda-se que o valor das variáveis estejam em aspas duplas. 
