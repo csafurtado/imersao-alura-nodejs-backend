@@ -2,8 +2,9 @@ import express from "express"  // Lib usada para criar APIs
 import postsRoutes from "./src/routes/postsRoutes.js"
 
 
-const app = express()       // Variavel que representara o servidor
-postsRoutes(app)            // Chama o app para dentro da função, permitindo-o usar as rotas definidas no arquivo
+const app = express()                   // Variavel que representara o servidor
+app.use(express.static("uploads"));     // O express irá utilizar a pasta 'uploads' para servir arquivos estáticos
+postsRoutes(app)                        // Chama o app para dentro da função, permitindo-o usar as rotas definidas no arquivo
 
 // Define a porta que o servidor irá oferecer seu serviço
 app.listen(3000, () => {
